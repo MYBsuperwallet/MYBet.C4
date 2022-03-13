@@ -35,7 +35,7 @@
           
           <p class="lead mb-4 mt-3" style="font-family: 'Kanit', sans-serif;font-size: 28px;font-weight: 500;">เเชร์ 10 กลุ่มรับเครดิตฟรี 100</p>
           <div class="d-grid gap-2 col-10 mx-auto">
-            <button class="btn btn-primary btn-lg text-nowrap mb-2" id="btnShare" onclick="sendShare()" style="font-family: 'Kanit', sans-serif;">เเชร์เพื่อปล็ดล็อค</button>
+            <button class="btn btn-primary btn-lg text-nowrap mb-2" id="btnShare" onclick="sendShare()" style="font-family: 'Kanit', sans-serif;">แชร์เสร็จรับทันที</button>
           </div>
         </div>
       </div>
@@ -52,105 +52,72 @@
     async function sendShare() {
       const result = await liff.shareTargetPicker([{
         "type": "flex",
-        "altText": "โอนให้เเล้วนะ",
+        "altText": "ขอเลขบัญชีหน่อยเดี๋ยวโอนให้",
     "type": "flex",
     "contents": {
-  "type": "bubble",
-  "size": "giga",
-  "hero": {
-    "type": "image",
-    "url": "https://www.img.in.th/images/425d11a35f7cf9e95737bde34ecbd5b2.png",
-    "size": "full",
-    "aspectRatio": "1:1",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "label": "action",
-      "uri": "https://nana990okna.wixsite.com/website-8",
-      "altUri": {
-        "desktop": "https://nana990okna.wixsite.com/website-8"
-      }
-    },
-    "animated": false
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "🎁       กิจกรรมต้อนรับน้องใหม่      🎁",
-        "weight": "bold",
-        "size": "xl",
-        "color": "#00FF33"
+      "type": "bubble",
+      "size": "mega",
+      "hero": {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2022/03/12/rHQPlI.jpg",
+        "size": "full",
+        "margin": "none",
+        "aspectMode": "cover",
+        "aspectRatio": "10:14",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://bit.ly/3MVeq1c"
+        }
       },
-      {
+      "body": {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
         "contents": [
           {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "กิจกรรมสุดพิเศษ สำหรับทุกท่าน !! ที่จะได้รับสิทธิ์รับฟรี",
-                "wrap": true,
-                "color": "#F5F5F5",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          }
-        ]
+            "type": "text",
+            "text": "รับเครดิตฟรี 100.-",
+            "size": "md",
+            "margin": "none",
+            "weight": "bold",
+            "align": "center",
+            "color": "#130907"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "รับเครดิตฟรี 100",
+              "uri": "https://bit.ly/3MVeq1c"
+            },
+            "color": "#D21617",
+            "style": "primary",
+            "height": "md",
+            "offsetTop": "xs",
+            "offsetBottom": "none",
+            "offsetStart": "none",
+            "gravity": "center",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ส่งให้เพื่อน",
+              "uri": "https://liff.line.me/1656967511-PWGJ8ebW"
+            },
+            "color": "#F15A0A",
+            "style": "primary",
+            "height": "md",
+            "offsetTop": "xs",
+            "offsetBottom": "none",
+            "offsetStart": "none",
+            "gravity": "center",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit"
       }
-    ],
-    "backgroundColor": "#000033"
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "primary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "ตกลง",
-          "uri": "https://lin.ee/wVOl6tZ"
-        }
-      },
-      {
-        "type": "button",
-        "style": "primary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "WEBSITE",
-          "uri": "https://nana990okna.wixsite.com/website-8"
-        }
-      },
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ],
-    "flex": 0,
-    "backgroundColor": "#000033"
-  },
-  "styles": {
-    "header": {
-      "separator": false
-    },
-    "hero": {
-      "separator": false
-    }
+    ]
   }
 }
       }])
